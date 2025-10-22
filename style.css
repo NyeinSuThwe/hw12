@@ -45,4 +45,35 @@ body {
 
 .infl {
   display: inline-flex;
+
+  .start {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;     /* visible when content wraps to multiple lines */
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  align-content: center;       /* visible when wrap produces multiple rows */
+}
+
+.around {
+  justify-content: space-around;
+  align-items: baseline;       /* demo baseline with a .big item below */
+  align-content: space-around; /* visible with wrap */
+}
+
+.between {
+  justify-content: space-between;
+  align-items: stretch;        /* children stretch on cross axis when allowed */
+  align-content: space-between;
+}
+
 }
