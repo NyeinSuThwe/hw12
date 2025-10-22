@@ -1,5 +1,3 @@
-========= */
-
 * {
   color: #000000;
   margin: 0;
@@ -17,9 +15,7 @@ body {
   margin: 20px 0;
 }
 
-/* Items */
 .item {
-  /*height: 30px;*/           /* ← replaced with min-height */
   min-height: 30px;
   width: 30px;
   border: 1px solid #e8e4e6;
@@ -27,26 +23,23 @@ body {
   padding: 10px;
 }
 
-/* Containers */
 .container {
   margin: 10px 0;
   background: #e8e4e6;
   height: 150px;
-  /* COMMIT 4 — Flex Wrap (assignment asks to add on container) */
-  flex-wrap: wrap;            /* only affects flex/inline-flex containers */
+  flex-wrap: wrap;
 }
 
-/* Flex modes */
 .flex {
   display: flex;
-  height: 100px;              /* assignment requirement */
-  /* flex-direction: row; */   /* default, left here for clarity */
+  height: 100px;
 }
 
 .infl {
   display: inline-flex;
+}
 
-  .start {
+.start {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
@@ -55,75 +48,42 @@ body {
 .end {
   justify-content: flex-end;
   align-items: flex-end;
-  align-content: flex-end;     /* visible when content wraps to multiple lines */
+  align-content: flex-end;
 }
 
 .center {
   justify-content: center;
   align-items: center;
-  align-content: center;       /* visible when wrap produces multiple rows */
+  align-content: center;
 }
 
 .around {
   justify-content: space-around;
-  align-items: baseline;       /* demo baseline with a .big item below */
-  align-content: space-around; /* visible with wrap */
+  align-items: baseline;
+  align-content: space-around;
 }
 
 .between {
   justify-content: space-between;
-  align-items: stretch;        /* children stretch on cross axis when allowed */
+  align-items: stretch;
   align-content: space-between;
 }
 
-}
-/* .side {
-  flex-grow: 1;
-  flex-shrink: 2;
-  flex-basis: 80px;
-}
-
-.middle {
-  flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: 40px;
-} */
-
-/* Replace with shorthand (no commas!) */
 .side {
-  flex: 1 2 80px;              /* grow 1, shrink 2, basis 80px */
+  flex: 1 2 80px;
 }
 
 .middle {
-  flex: 2 1 40px;              /* grow 2, shrink 1, basis 40px */
-
-/* .side {
-  flex-grow: 1;
-  flex-shrink: 2;
-  flex-basis: 80px;
+  flex: 2 1 40px;
 }
 
-.middle {
-  flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: 40px;
-} */
-
-/* Replace with shorthand (no commas!) */
-.side {
-  flex: 1 2 80px;              /* grow 1, shrink 2, basis 80px */
-}
-
-.middle {
-  flex: 2 1 40px;              /* grow 2, shrink 1, basis 40px */
-
-  h2 {
+h2 {
   font-size: 18px;
   margin: 10px;
 }
 
 .big {
-  font-size: 30px;             /* helps you see baseline vs stretch */
+  font-size: 30px;
 }
 
 .block {
@@ -137,4 +97,3 @@ body {
 .inbl {
   display: inline-block;
 }
-
