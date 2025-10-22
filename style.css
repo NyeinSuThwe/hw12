@@ -77,3 +77,42 @@ body {
 }
 
 }
+/* .side {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 80px;
+}
+
+.middle {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 40px;
+} */
+
+/* Replace with shorthand (no commas!) */
+.side {
+  flex: 1 2 80px;              /* grow 1, shrink 2, basis 80px */
+}
+
+.middle {
+  flex: 2 1 40px;              /* grow 2, shrink 1, basis 40px */
+
+/* .side {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 80px;
+}
+
+.middle {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 40px;
+} */
+
+/* Replace with shorthand (no commas!) */
+.side {
+  flex: 1 2 80px;              /* grow 1, shrink 2, basis 80px */
+}
+
+.middle {
+  flex: 2 1 40px;              /* grow 2, shrink 1, basis 40px */
