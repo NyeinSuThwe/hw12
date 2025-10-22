@@ -116,3 +116,25 @@ body {
 
 .middle {
   flex: 2 1 40px;              /* grow 2, shrink 1, basis 40px */
+
+  h2 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.big {
+  font-size: 30px;             /* helps you see baseline vs stretch */
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inbl {
+  display: inline-block;
+}
+
